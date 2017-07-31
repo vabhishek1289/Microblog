@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  	
+  	<link href="css/bootstrap.min.css" rel="stylesheet">
+  	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.google.com/?selection.family=Arima+Madurai">
+    <link rel="stylesheet" type="text/css" href="css/jquery.classyedit.css" />
+    <style media="screen">
+    @import 'https://fonts.googleapis.com/css?family=Aref+Ruqaa|Dancing+Script|Poiret+One|Raleway|Satisfy|Shadows+Into+Light';
+      body {
+/*        font-family: 'Shadows Into Light', cursive;
+        font-family: 'Satisfy', cursive;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Raleway', sans-serif;
+        font-family: 'Poiret One', cursive;
+        */font-family: 'Aref Ruqaa', serif;
+        font-family: 'Dancing Script', cursive;    
+        margin: 0px;
+        padding: 0px;
+        background-color: #fff;
+        /*background: linear-gradient(-90deg,#02c1d6 50%,#fff 50%);*/
+        background-repeat: repeat;
+        background-size: 25px 100%;
+        padding-top: 80px;
+      }
+      .login-register {
+        height: 100%;
+      }
+      .sign-in {
+        background: white;
+        width: 100%;
+        min-height: 500px;
+        height: auto;
+        box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+      }
+      .form-toggle{
+        position: absolute;
+        top: 2%;
+        right: -10px;
+        background: #02c1d6;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
+        padding: 25px;
+        padding-top: 22px;
+        font-size: 2em;
+        color: white;
+        z-index: 100;
+      }
+      .page-name {
+        position: absolute;
+        top: 0px;
+        font-weight: bold;
+        width: auto;
+        border-left: 5px solid #02c1d6;
+        padding-left: 35px;
+        color: #02c1d6;
+      }
+      .form-content {
+        position: relative;
+        top: 100px;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        padding-left: 10%;
+        background: white;
+      }
+      .input-set {
+        position: relative;
+        margin-bottom: 50px;
+      }
+      .input-set input {
+        height: 50px;
+        width: 100%;
+        font-size: 1.5em;
+        border: 0px;
+        border-bottom: 1px solid black;
+        transition: all .35s ease-in;
+      }
+      .input-set .classy-editor {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        right: -15px;
+        top: 0px;
+        font-size: 1.2em;
+        margin-top: 10px;
+      }
+      .classy-editor {
+        background: orange;
+      }
+      .input-set label {
+        opacity: .5;
+        position: absolute;
+        top: 15px;
+        left: 5px;
+        font-size: 1.5em;
+        color: #34cdde;
+        transition: all 0.3s ease-in;
+      }
+      .sign-up {
+        display: none;
+        background: white;
+        width: 100%;
+        height: 500px;
+      }
+      .input-submit input[type=submit]{
+        width: 30%;
+        height: 50px;
+        border: 2px solid #999;
+        background: transparent;
+        color: #999;
+        font-weight: bold;
+        font-size: 1.5em;
+        transition: width .3s ease;
+      }
+      .input-submit:hover input[type=submit]{
+        width: 31%;
+        border: 2px solid #02c1d6;
+        color: #02c1d6;
+      }
+      input[type=file] {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-image: url("icon_2.jpg");
+        text-indent: -9999px;
+        background-position: -15px -250px;
+        display: inline-block;
+        margin-top: 5px;
+        border: 1px solid #02c1d6;
+    }
+      .input-set select {
+        position: relative;
+        height: 50px;
+        width: 45%;
+        font-size: 1.5em;
+        font-weight: bold;
+        border: 0px;
+        border-bottom: 1px solid black;
+        color: #02c1d6;
+        margin-bottom: 0px;
+      }
+      .options {
+        margin-bottom: 0px;
+      }
+      .btn-youtube {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-image: url("https://www.iosh.co.uk/~/media/Images/Icons/Social/iosh-youtube-icon-colour-50px.png?h=50&la=en&w=50");
+        text-indent: -9999px;
+        background-position: -5px ;
+        display: inline-block;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        border: 1px solid #d00;
+      }
+      .hide_thing {
+        border:  0px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #02c1d6;
+        color: #02c1d6;
+        height: 35px;
+        width: 200px;
+        animation: slide-one 0.35s ease-in 1;
+      }
+      @keyframes slide-one {
+        from{
+          margin-left: 30%;
+          width: 0px;
+        }
+      }
+      .hide_default{
+        display: none;
+      }
+      .classyedit .toolbar {
+        display: block;
+      }
+    </style>
+
+  </head>
+  <body>
+    <!-- TODO: Add filleds for tag and reguce some extra filleds ajax will be better choice i guess -->
+    <div class="col-lg-1">
+    </div>
+    <div class="col-lg-10 col-sm-12 login-register">
+      <div class="col-lg-12">
+        <div class="form-toggle">
+          <span class="glyphicon glyphicon-duplicate"></span>
+        </div>
+        <div class="sign-in">
+          <h1 class="page-name">
+            <span>Post Here!</span>
+          </h1>
+          <div class="form-content">
+            <form  action="index.html" method="post">
+              <div class="col-lg-4">
+                <div class="input-set">
+                  <input type="text" name="title" value="" required="">
+                  <label for="title">Title</label>
+                </div>
+                <div class="input-set options">
+                </div>
+                <input type="file" name="post_image" multiple="">
+                <input type="button" name="name" class="btn-youtube">
+                <input type="text" name="youtube-link" class="hide_default" placeholder="Youtube URL"/>
+              </div>
+              <div class="col-lg-8 input-set">
+                <textarea class="classy-editor" maxlength="250" name="name" rows="8" cols="40" spellcheck="true" placeholder="Please Type text Here!"></textarea>
+              </div>
+              <div class="input-submit">
+                <input type="submit" value="Go">
+              </div>
+              <!-- TODO: Add forgot password link -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2">
+    </div>
+    <script src="js/jquery-3.0.0.min.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.classyedit.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".classy-editor").ClassyEdit();
+        });
+    </script>
+    <script type="text/javascript">
+    $(".form-toggle").click(function () {
+      var t = $(".classy-editor").val();
+      alert(t);
+    });
+    $(".input-set").on("click",function (){
+      $(this).find("label").css({"top":"-30px","left":"5px","font-size":"1.3em"});
+      $(this).find("input").focus();
+      $(this).find("input").css({"border-bottom":"3px solid #02c1d6"});
+    });
+    $(".input-set").find("input").focus(function (){
+      $(this).parent().find("label").css({"top":"-30px","left":"5px","font-size":"1.3em","opacity":"1"});
+      $(this).css({"border-bottom":"3px solid #02c1d6"});
+    });
+    $(".input-set").find("input").focusout(function (){
+      if($(this).val() == '') {
+        $(this).parent().find("label").css({"top":"15px","left":"5px","font-size":"1.5em","opacity":".5"});
+        $(this).css({"border-bottom":"1px solid #000"});
+      }
+    });
+    $(".btn-youtube").click(function(){
+      $("input[name=youtube-link]").toggleClass("hide_default");
+      $("input[name=youtube-link]").toggleClass("hide_thing");
+    });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+		body {
+			padding: 0px;
+			margin: 0px;
+			background: #aaa;
+			color: #fff;			
+			font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+			color: #fff;
+			padding-left: 90px;
+		}
+		.menu {	
+			margin: 0px;
+			background: #556270;
+			width: 240px;
+			height: 100%;
+			position: fixed;			
+			top: 0;
+			left: 0;
+			z-index: 5;
+			outline: none;		
+			width: 90px;
+			height: 100%;					
+		}			
+		.menu ul li a {
+			text-decoration: none;
+			color: white;
+			padding-left: 15px; 
+			opacity: 0;
+		}
+		.menu ul li span {
+			font-size: 1.5em;
+			font-size: 1.8em;
+		}
+		.menu .menu_header {
+			background: rgba(0,0,0,.2);
+			padding-top: 25px;
+			margin-bottom: 0px;			
+			padding: .8em;
+			position: relative;
+		}
+		.menu .menu_header img {
+			width: 100px;
+			height: 100px;
+			margin: auto;
+			overflow: hidden;
+			display: block;
+			border-radius: 50%;
+			border: 5px solid #59e9df;
+			box-shadow: 0px 0px 0px 5px rgba(255,255,255,.1);
+			width: 60px;
+			height: 60px;
+		}
+		.menu_header p {
+			margin: auto;
+			margin-top: 15px; 						
+			text-align: center;			
+			padding: 5px;
+			font-weight: bold;			
+		}
+
+
+		/* althour*/		
+		.menu:hover{
+			margin: 0px;
+			background: #556270;
+			width: 240px;
+			height: 100%;
+			position: fixed;			
+			top: 0;
+			left: 0;
+			z-index: 5;
+			outline: none;									
+		}
+		.menu:hover ul li a {
+			opacity: 1;
+		}
+		.menu_header {
+			background: rgba(0,0,0,.2);
+			padding-top: 25px;
+			margin-bottom: 0px;			
+		}
+		.menu:hover .menu_header img {
+			width: 100px;
+			height: 100px;
+			margin: auto;
+			overflow: hidden;
+			display: block;
+			border-radius: 50%;
+			border: 5px solid #59e9df;
+			box-shadow: 0px 0px 0px 5px rgba(255,255,255,.1);
+		}
+		.menu:hover .menu_header p{
+			margin: auto;
+			margin-top: 15px; 						
+			text-align: center;			
+			padding: 5px;
+			font-weight: bold;
+			}
+		.menu:hover ul {
+			list-style: none;
+		   	padding: 0.5em 0;
+			margin: 0;			
+		}
+		.menu:hover ul li {
+			padding: 0.5em 1em 0.5em 1.5em;
+			font-size: 1.3em;
+			font-weight: regular;
+			background-repeat: no-repeat;
+			background-position: left 15px center;
+			background-size: auto 20px;
+			transition: all 0.15s linear;
+			cursor: pointer;			
+		}
+		.menu ul li:hover {
+		  background-color: rgba(0, 0, 0, 0.1);
+		}
+		.menu ul li:focus {
+		  outline: none;
+		}
+		.menu ul li a {
+			text-decoration: none;
+			color: white;
+			padding-left: 15px; 			
+		}
+		.menu ul li a:visited {
+			color: white;
+		}
+		.menu ul li span {					
+			font-size: 1.5em;
+		}
+
+		@media screen and (max-width: 900px) and (min-width: 400px) {			
+		}
+		@media only screen and (max-device-width: 400px) {
+
+		}

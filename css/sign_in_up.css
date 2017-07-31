@@ -1,0 +1,115 @@
+@import 'https://fonts.googleapis.com/css?family=Aref+Ruqaa|Dancing+Script|Poiret+One|Raleway|Satisfy|Shadows+Into+Light';
+  body {
+    font-family: 'Poiret One', cursive;
+    margin: 0px;
+    padding: 0px;
+    background-color: #87D582;
+    background: linear-gradient(-90deg,#02c1d6 50%,#fff 50%);
+    background-repeat: repeat;
+    background-size: 5px 100%;
+    background: url("http://resier.files.wordpress.com/2011/03/my-vintage-collage.jpg");
+    padding-top: 80px;
+  }
+  .login-register {
+    height: 100%;
+  }
+  .sign-in,.sign-up {
+    background: white;
+    width: 100%;
+    min-height: 500px;
+    box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+  }
+  .form-toggle{
+    position: absolute;
+    top: 2%;
+    right: -10px;
+    background: #02c1d6;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    padding-top: 22px;
+    font-size: 2em;
+    color: white;
+    z-index: 100;
+  }
+  .page-name {
+    position: absolute;
+    top: 5%;
+    font-weight: bold;
+    width: auto;
+    border-left: 5px solid #02c1d6;
+    padding-left: 5px;
+    color: #02c1d6;
+  }
+  .form-content {
+    position: relative;
+    top: 110px;
+    width: 95%;
+    height: 100%;
+    padding: 5px;
+    padding-left: 10%;
+  }
+  .input-set {
+    position: relative;
+    width: 90%;
+    margin-bottom: 40px;
+  }
+  .input-set input {
+    height: 50px;
+    width: 100%;
+    font-size: 1.5em;
+    border: 0px;
+    border-bottom: 1px solid black;
+    transition: all .35s ease-in;
+  }
+  .input-set label {
+    opacity: .5;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    font-size: 1.5em;
+    color: #34cdde;
+    transition: all 0.3s ease-in;
+  }
+  .sign-up {
+    display: none;
+    background: white;
+    width: 100%;
+    height: 500px;
+  }
+  .input-submit input[type=submit]{
+    width: 30%;
+    height: 50px;
+    border: 2px solid #999;
+    background: transparent;
+    color: #999;
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: width .3s ease;
+  }
+  .input-submit:hover input[type=submit]{
+    width: 30%;
+    border: 2px solid #02c1d6;
+    color: #02c1d6;
+  }
+  .input-set select {
+    position: relative;
+    height: 50px;
+    width: 45%;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 0px;
+    border-bottom: 1px solid black;
+    color: #02c1d6;
+    margin-bottom: 0px;
+  }
+@media screen and (max-width: 768px) {
+  .form-content {
+    width: 100% ;
+    padding: 0px;
+    padding-left: 5%;;
+  }
+}

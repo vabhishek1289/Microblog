@@ -1,0 +1,352 @@
+  .login-register {
+    position: fixed;
+    background: rgba(0, 0, 0, 0);;
+    height: 100%;
+    width: 99.999%;
+  }
+  .form-toggle{
+    position: absolute;
+    top: 2%;
+    right: 10px;
+    background: #02c1d6;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    cursor: pointer;
+    padding-top: 10px;
+    font-size: 1.5em;
+    color: white;
+    z-index: 100;
+  }
+  .form input[type=submit] {
+    position: fixed;
+    bottom: 0%;
+    right: 10px;
+    background: #02d6c1;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    padding-top: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
+    font-size: 1.5em;
+    color: white;
+    z-index: 100;
+  }
+  .page-name {
+    position: relative;
+    top: 0px;
+    font-weight: bold;
+    width: auto;
+    border-left: 5px solid #02c1d6;
+    padding-left: 35px;
+    color: #fff;
+  }
+  .form input,.form select{
+    height: 50px;
+    width: 100%;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    border: 0px;
+    border-bottom: 2px solid rgba(14, 185, 192, 0.5);
+    transition: all .35s ease-in;
+  }
+  .form textarea{
+    height: 250px;
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 1.5em;
+    border: 0px;
+    border-bottom: 2px solid rgba(14, 185, 192, 0.5);
+    resize: none;
+  }
+  .form label[for=youtube_link] {
+    position: absolute;
+    left: 20px;
+  }
+  .form label[for=title] {
+    position: absolute;
+    left: 20px;
+    height: 40px;
+    width: 40px;
+    background-image: url("http://www.miedemaauctioneering.com/wp-content/uploads/2015/12/title-icon-150.png");
+    background-size: 40px 40px;
+  }
+  .form label[for=tags] {
+    position: absolute;
+    left: 20px;
+    height: 40px;
+    width: 40px;
+    background-image: url("http://icons.iconarchive.com/icons/pixelkit/gentle-edges/128/Tags-Flat-icon.png");
+    background-size: 40px 40px;
+  }
+  .form input[type=text],input[type=url] {
+    padding-left: 50px;
+  }
+  input[type=file] {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url("../icon_2.jpg");
+    text-indent: -1110px;
+    background-position: -15px -250px;
+    display: inline-block;
+    margin-top: 5px;
+    border: 2px solid #0cc;
+    cursor: pointer;
+  }
+  .form .file_info {
+    font-size: 1.2em;
+    padding-left: 5px;
+    color: white;
+  }
+  .form .btn-youtube {
+    margin: 0px;
+    padding: 0px;
+    height: 40px;
+    width: 40px;
+    background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwxOTiYXnXq-K7zCK3liF6LnnmU78QgJPa6cOqb0fdqMK0GMQH_g");
+    background-size: 40px 40px;
+    text-indent: -9999px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .input-set select {
+    position: relative;
+    height: 50px;
+    width: 45%;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 0px;
+    border-bottom: 1px solid black;
+    color: #02c1d6;
+    margin-bottom: 0px;
+  }
+  .options {
+    margin-bottom: 0px;
+  }
+  .checked_btn {
+    margin-left: 15px;
+    padding: 0px;
+    display: inline;
+    cursor: pointer;
+  }
+  .checked_btn span {
+    padding: 3px;
+    border: 2px solid #02c1d6;
+    color: white;
+  }
+  .menu .user_name {
+    position: absolute;
+    font-size: 1.3em;
+    right: 10px;
+    top:15px;
+  }
+  .post iframe {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+  }
+  .video a {
+    position: relative;
+  }
+  .video a::after{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: url("http://media.mybrowseraddon.com/icons/youtube-most-popular64.png");
+    background-size: 50px 50px;
+  }
+  .like, .comment {
+    color: gray;
+    cursor: pointer;
+  }
+  .liked{
+    color: red;
+  }
+  .comment-part-off{
+    display: none;
+  }
+  .comment-part {
+    position: absolute;
+    bottom:80px;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+    border: 4px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 300px;
+    animation: com-mov .30s ease-in 1;
+  }
+  @keyframes com-mov {
+    from {
+      background: #02c1d6;
+      transform: rotateY(90deg) translateX(150px);
+    }
+  }
+  .total-comments {
+    background: #f0f0f0;
+    height: 75%;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 4px solid gray;
+    margin-bottom: 0px;
+  }
+  .my-comments {
+    color: rgba(0, 0, 0, 0.5);
+    height: 25%;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .total-comments ul {
+    padding: 10px;
+    list-style: none;
+  }
+  .total-comments ul li{
+    margin: 5px;
+    margin-left: 25px;
+    padding: 10px;
+    list-style: none;
+    border: 0px solid #02c1d6;
+    border-left: 2px solid #0cc;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.05);
+    background: white;
+    color: #123;
+  }
+  .my-comments textarea{
+    border: 0px;
+    border: 4px solid #02c1d6;
+    padding-top: 15px;
+    padding-left: 10px;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    color: #000;
+  }
+  .my-comments input[type=submit] {
+    position: absolute;
+    background: #0cc;
+    border: 0px;
+    right: 10px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url("https://www.whatsapp.com/img/faq/en/android/540295e7359befb428169b70517d32a17a759a07.jpg");
+    background-size: 50px 50px;
+    text-indent:-1000px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+  }
+  .main-part {
+    height: 100%;
+  }
+  .comment-close {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    border: 0px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
+    padding-top: 3px;
+    color: #fff;
+    background: rgba(250, 100, 100, 1);
+  }
+  .more-comment {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 75px;
+    left: -15px;
+    border-radius: 50%;
+    border: 0px;
+    background: #0cc;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
+  }
+  #cover {
+    background: url("http://www.zabki.pl/bundles/velacmssolutionslupiakonecka/images/Preloader_8.gif") no-repeat scroll center center #FFF;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+  }
+  .post-date {
+    text-transform: uppercase;
+  }
+  .loading-part {
+    position: fixed;
+    background: url('http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/08/1407310358spinner-cropped.gif') no-repeat center;
+    left: 0px;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 100%;
+    height: 150px;
+    display: none;
+  }
+  .post .content-type .location-part{
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 10;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+  }
+  .post .content-type .location-part-toggle {
+      position: absolute;
+      bottom: -20px;
+      right: -10px;
+      z-index: 11;
+      background: url("https://freeiconshop.com/files/edd/location-map-flat.png") no-repeat center;
+      background-size: 45px 45px;
+      box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+      border-radius: 50%;
+      width: 42px;
+      height: 42px;
+  }
+  .post-poster img {
+    border: 3px solid #FF554E;
+    border-top-color: #0cc1d6;
+    border-left-color: #8b6;
+    border-right-color: #FFAD4E;
+  }
+  .menu .search-menu form input[type=text]{
+    position: absolute;
+    bottom: -60px;
+    left: 0px;
+    height: 60px;
+    width: 300px;
+    font-size: 1.5em;
+    border: 0px;
+    padding-left: 10px;
+    background: #fafafa;
+    border-bottom: 2px solid #02c1d6;
+  }
+  .menu .search-menu form input[type=submit]{
+    position: absolute;
+    bottom: -55px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border: 0px;
+    background-color: #0cc;
+    background: url("http://cache4.asset-cache.net/xt/501279445.jpg?v=1&g=fs1%7C0%7CISI%7C79%7C445&s=1");
+    background-size: 50px 50px;
+    border-radius: 50%;
+  }
+  .menu .search-menu {
+    display: none;
+  }

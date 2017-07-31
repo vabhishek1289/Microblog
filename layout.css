@@ -1,0 +1,28 @@
+body
+{
+    padding-top: 25px;
+    background: rgba(222,238,200,5);
+    background: -moz-linear-gradient(left, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+}
+
+.post
+{
+    background-color: #FFF;
+    overflow: hidden;
+    box-shadow: 0 0 1px #CCC;
+}
+.col-sm-3,.col-md-3{
+
+}
+
+.post .content
+{
+    padding: 15px;
+}
+
+.post .post-img-content
+{
+    position: relative;
+}
+

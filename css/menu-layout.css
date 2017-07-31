@@ -1,0 +1,133 @@
+
+.scroll-up-button-on {
+  position: fixed;
+  bottom:150px;
+  right: 150px;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.5);;
+  background: url("http://i1155.photobucket.com/albums/p559/scrolltotop/arrow3.png");
+  background-position: center;
+  background-size: 35px 35px;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  animation: round .35s 1;
+}
+.scroll-up-button-off {
+  animation: round-off .50s 1;
+}
+@keyframes round-off {
+  to{
+    opacity: 0;
+  }
+  from {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes round {
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+.iconic {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-size: 300px ;
+  background-image: url("../icon.png");
+  background-repeat: repeat;
+  text-indent: -9999px;
+  background-position: -3px -4px;
+  display: inline-block;
+}
+.iconic1 {
+  background-position: -85px -5px;
+}
+.iconic2 {
+  background-position: -167px -5px;
+}
+.iconic3 {
+  background-position: -245px -5px;
+}
+.iconic4 {
+  background-position: -85px -157px;
+}
+
+
+.menu-side {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  height: 500px;
+  padding-top: 30px;
+  background: #fff;
+  color: #fff;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.menu-side-toggle {
+  content: '';
+  height: 50px;
+  width: 50px;
+  display: none;
+}
+.menu-side ul {
+  padding: 0px;
+  text-align: center;
+  list-style: none;
+}
+.menu-side ul li {
+  position: relative;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  font-size: 2em;
+}
+.menu-side ul li i {
+  display: none;
+  font-size: .4em;
+}
+
+@media screen and (min-width: 1000px) {
+  .menu-side ul li i {
+    display: block;
+    font-size: 0.5em;
+  }
+}
+@media screen and (max-width: 768px) {
+ .menu-side {
+   transform: translate3d(-100%,0,0);
+   position: fixed;
+   width: 60px;
+   z-index: 10;
+ }
+  .menu-side .menu-side-toggle {
+   position: fixed;
+   top: 0%;
+   left: 100%;
+   width: 35px;
+   height: 35px;
+   background: #fff;
+   background-size: cover;
+   background-repeat: no-repeat;
+   border: 0px solid black;
+   display: block;
+ }
+
+ .menu-side:hover {
+   transform: translate3d(0,0,0);
+   animation: menu-open-anim .35s 1;
+ }
+ .menu-side-open {
+   transform: translate3d(0,0,0);
+   animation: menu-open-anim .35s 1;
+ }
+ @keyframes menu-open-anim {
+   from {
+     transform: translate3d(-110%,0,0);
+   }
+ }
+}

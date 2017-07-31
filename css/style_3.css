@@ -1,0 +1,321 @@
+  @import 'https://fonts.googleapis.com/css?family=Aref+Ruqaa|Dancing+Script|Poiret+One|Raleway|Satisfy|Shadows+Into+Light';
+  @import 'https://fonts.googleapis.com/css?family=Atma|Bad+Script|EB+Garamond|Kaushan+Script|Playball';
+  body {
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 0.5px;
+  }
+  body {
+    font-family: 'Raleway';
+    letter-spacing: 0.5px;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background: #eee;
+    background-size: 2em 100%;
+  }
+  body {
+    /*background: url("http://www.gizmobolt.com/wp-content/uploads/2014/11/14-92.png") repeat center;
+    //background: url("http://2.bp.blogspot.com/-uPDqHcaaw-w/VTVdTMd4K9I/AAAAAAAAQVM/sej-cHnQ0NA/s1600/San%2BFrancisco%2B(Evening).png") repeat center;
+    //background: url("http://1.bp.blogspot.com/-supV3PZd5J4/VTVdcDUtBdI/AAAAAAAAQVc/k2aiNhrdqmg/s1600/San%2BFrancisco%2B(Night).png") repeat center;
+    //background: url("http://wallpapercave.com/wp/aZlqiAT.png") repeat center;*/
+    background: url("http://www.thegeeksclub.com/wp-content/uploads/2015/01/whatsapp.png") repeat center;
+    /*background-size: 360px 508px;*/
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .login-register {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.20);;
+    height: 100%;
+    width: 99.999%;
+  }
+  .form-toggle{
+    position: absolute;
+    top: 2%;
+    right: 10px;
+    background: #02c1d6;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    padding-top: 15px;
+    font-size: 1.5em;
+    color: white;
+    z-index: 100;
+  }
+  .form input[type=submit] {
+    position: fixed;
+    bottom: 0%;
+    right: 10px;
+    background: #02d6c1;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    padding-top: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
+    font-size: 1.5em;
+    color: white;
+    z-index: 100;
+  }
+  .page-name {
+    position: relative;
+    top: 0px;
+    font-weight: bold;
+    width: auto;
+    border-left: 5px solid #02c1d6;
+    padding-left: 35px;
+    color: #fff;
+  }
+  .post iframe {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+  }
+  .video a {
+    position: relative;
+  }
+  .video a::after{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: url("https://cdn0.iconfinder.com/data/icons/significon-social/512/Significon-YouTube-128.png");
+    background-size: 50px 50px;
+  }
+  .viadeo:hover a::after{
+    background: url("https://cdn0.iconfinder.com/data/icons/thin-sounds-music/57/thin-390_music_video_play_youtube-128.png");
+    background-size: 50px 50px;
+  }
+  .viadeo:hover a{
+    opacity: 0.85;
+  }
+  .like, .comment {
+    color: gray;
+  }
+  .liked{
+    color: red;
+  }
+  .comment-part-off{
+    display: none;
+  }
+  .comment-part {
+    position: absolute;
+    bottom:80px;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+    border: 4px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 300px;
+    animation: com-mov .30s ease-in 1;
+  }
+  @keyframes com-mov {
+    from {
+      background: #02c1d6;
+      transform: rotateY(90deg) translateX(150px);
+    }
+  }
+  .total-comments {
+    background: #f0f0f0;
+    height: 75%;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 4px solid gray;
+    margin-bottom: 0px;
+  }
+  .my-comments {
+    color: rgba(0, 0, 0, 0.5);
+    height: 25%;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .total-comments ul {
+    padding: 10px;
+    list-style: none;
+  }
+  .total-comments ul li{
+    margin: 5px;
+    margin-left: 25px;
+    padding: 10px;
+    list-style: none;
+    border: 0px solid #02c1d6;
+    border-left: 2px solid #0cc;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.05);
+    background: white;
+    color: #123;
+  }
+  .my-comments textarea{
+    border: 0px;
+    border: 4px solid #02c1d6;
+    padding-top: 15px;
+    padding-left: 10px;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    color: #000;
+  }
+  .my-comments input[type=submit] {
+    position: absolute;
+    background: #0cc;
+    border: 0px;
+    right: 10px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url("https://www.whatsapp.com/img/faq/en/android/540295e7359befb428169b70517d32a17a759a07.jpg");
+    background-size: 50px 50px;
+    text-indent:-1000px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+  }
+  .main-part {
+    height: 100%;
+  }
+  .comment-close {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    border: 0px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
+    padding-top: 3px;
+    color: #fff;
+    background: rgba(250, 100, 100, 1);
+  }
+  .more-comment {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 75px;
+    left: -15px;
+    border-radius: 50%;
+    border: 0px;
+    background: #0cc;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
+  }
+  #cover {
+    background: url("http://www.zabki.pl/bundles/velacmssolutionslupiakonecka/images/Preloader_8.gif") no-repeat scroll center center #FFF;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+  }
+  .post-date {
+    text-transform: uppercase;
+  }
+  .loading-part {
+    position: fixed;
+    background: url('http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/08/1407310358spinner-cropped.gif') no-repeat center;
+    left: 0px;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 100%;
+    height: 150px;
+    display: none;
+  }
+  .post .content-type .location-part{
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 10;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+  }
+  .post .content-type .location-part-toggle {
+      position: absolute;
+      bottom: -20px;
+      right: -10px;
+      z-index: 11;
+      background: url("https://freeiconshop.com/files/edd/location-map-flat.png") no-repeat center;
+      background-size: 45px 45px;
+      box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+      border-radius: 50%;
+      width: 42px;
+      height: 42px;
+  }
+  .post-poster img {
+    border: 3px solid #FF554E;
+    border-top-color: #0cc1d6;
+    border-left-color: #8b6;
+    border-right-color: #FFAD4E;
+  }
+  .menu .search-menu form input[type=text]{
+    position: absolute;
+    bottom: -60px;
+    left: 0px;
+    height: 60px;
+    width: 300px;
+    font-size: 1.5em;
+    border: 0px;
+    padding-left: 10px;
+    background: #fafafa;
+    border-bottom: 2px solid #02c1d6;
+  }
+  .menu .search-menu form input[type=submit]{
+    position: absolute;
+    bottom: -55px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border: 0px;
+    background-color: #0cc;
+    background: url("http://cache4.asset-cache.net/xt/501279445.jpg?v=1&g=fs1%7C0%7CISI%7C79%7C445&s=1");
+    background-size: 50px 50px;
+    border-radius: 50%;
+  }
+  .menu .search-menu {
+    display: none;
+  }
+  .menu .user_name {
+    position: absolute;
+    font-size: 1.3em;
+    right: 10px;
+    top:15px;
+  }
+
+
+/**************SEARCH RESULT RELATED CSS**************/
+
+.search-result {
+  display: block;
+  width: 300px;
+  height: auto;
+  background: white;
+  position: absolute;
+  top: 120px;
+  left: 0px;
+  color: #898;
+}
+.user-search-result,.post-search-result {
+  width: 100%;
+  padding: 5px;
+  padding-left: 0px;
+  border-bottom: 2px solid gray;
+}
+.user-search-result ul ,.post-search-result ul {
+  list-style: none;
+  padding-left: 15px;
+}
+.post-search-result ul li img ,.user-search-result ul li img{
+  width: 60px;
+  margin-right: 10px;
+}
+.post-search-result ul li img {
+  margin: 10px;
+}
+.post-search-result ul li div, .user-search-result ul li{
+  margin: 5px;
+  padding: 5px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}

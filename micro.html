@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Project Home Page Template</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link href="css/style_2.css" rel="stylesheet">
+	<link href="css/microPost.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/main-menu-style.css" charset="utf-8">
+	<style media="screen">
+		.post .content-type .location-part{
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 10;
+			box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+			border: 1px solid orange;
+		}
+		.post .content-type .location-part-toggle {
+				position: absolute;
+				top:10px;
+				left: 10px;
+				z-index: 11;
+				background: url("https://freeiconshop.com/files/edd/location-map-flat.png") no-repeat center;
+				background-size: 45px 45px;
+				box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+				border-radius: 50%;
+				width: 42px;
+				height: 42px;
+		}
+	</style>
+</head>
+<body>
+	<div class="menu">
+		<div class="menu-open-tag">
+			<span class=" glyphicon glyphicon-option-horizontal"></span>
+		</div>
+		<div class="menu-brand">
+			<span class="glyphicon glyphicon-subscript"></span>
+		</div>
+		<div class="menu-brand">
+			<span class="glyphicon glyphicon-search"></span>
+		</div>
+		<div class="main-menu">
+			<ul class="menu-item">
+				<li class="item"><a href="#"><span class="icon glyphicon glyphicon-search"></span><span class="menu-text">Search</span></a></li>
+				<li class="item" ><a class="dropdown" id="modal1" href="#"><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Download <span class="glyphicon glyphicon-plus"></span></span></a></li>
+				<ul class="modal1 dropdown-item">
+					<a href="home.html"><li><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Download</span></li></a>
+					<a href="#"><li><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Download</span></li></a>
+					<a href="#"><li><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Download</span></li></a>
+				</ul>
+				<li class="item"><a href="#"><span class="icon glyphicon glyphicon-home"></span><span class="menu-text">Home</span></a></li>
+				<li class="item"><a class="dropdown" id="modal2" href="#"><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Download <span class="glyphicon glyphicon-plus"></span></span></a></li>
+				<ul class="modal2 dropdown-item">
+					<a href="#"><li><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Downldad</span></li></a>
+					<a href="#"><li><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Downldad</span></li></a>
+					<a href="#"><li><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Downldad</span></li></a>
+					<a href="#"><li><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Downldad</span></li></a>
+					<a href="#"><li><span class="icon glyphicon glyphicon-download-alt"></span><span class="menu-text">Downldad</span></li></a>
+				</ul>
+				<li class="item"><a href="#"><span class="icon glyphicon glyphicon-cog"></span><span class="menu-text">Settings</span></a></li>
+			</ul>
+		</div>
+	</div>
+<div  id="users" class="container-fluid col-lg-12 col-sm-12">
+	<div class="search-local-post">
+		<input class="search" placeholder="Search local Post" />
+	</div>
+	<div id="masonry" class="list post-box col-lg-12 col-sm-12">
+		<div class="post">
+			<div class="post-img">
+				<div class="post-date">
+					<span class="post-year">2016</span>
+					<span class="post-day">JUN/16</span>
+				</div>
+				<div class="content-type">
+					<img src="https://static.pexels.com/photos/64769/pexels-photo-64769-large.jpeg" alt="" />
+					<img class="location-part" src="https://api.mapbox.com/v4/mapbox.run-bike-hike/pin-m-camera+025a64(75.8582181,22.7258657)/75.8582181,22.7258657,14/350x250@2x.png?access_token=pk.eyJ1IjoiYWRpdHlhdmFzaGlzaHRoYSIsImEiOiJjaXBjOGt0bW8wMDd3dTBuaXJ0bzZka295In0.SN-dG4LEDz4muIf7p7HoIA" alt="" />
+					<div class="location-part-toggle"></div>
+				</div>
+				<div class="post-poster">
+					<img src="icon_2.jpg" alt="" />
+					<span>// ADITYA </span>
+				</div>
+			</div>
+			<div class="post-content">
+				<p>
+					<a href="#">This is Headding to be set of this character</a>
+				</p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+			</div>
+			<div class="post-readmore">
+				<div class="social-sharing">
+					<a href="#"><i class="glyphicon glyphicon-education"></i></a>
+					<a href="#"><i class="glyphicon glyphicon-object-align-left"></i></a>
+					<a href="#"><i class="glyphicon glyphicon-console"></i></a>
+				</div>
+			</div>
+			<div class="post-bottom">
+					<div class="post-bottom-comment">
+						12:52PM 06-Aug'16
+					</div>
+			</div>
+		</div>
+<!-- TODO: SAMPLE POST TO DELETE -->
+<div class="post">
+	<div class="post-img">
+		<div class="content-type">
+			<div class="content-null-image"></div>
+		</div>
+		<div class="post-poster">
+			<img src="icon_2.jpg" alt="" />
+			<span>// ADITYA </span>
+		</div>
+	</div>
+	<div class="post-content">
+		<p>
+			<a href="#">This is Headding to be set of this character</a>
+		</p>
+		Lorem ipum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+	</div>
+	<div class="post-readmore">
+		<div class="social-sharing">
+			<a href="#"><i class="glyphicon glyphicon-education"></i></a>
+			<a href="#"><i class="glyphicon glyphicon-object-align-left"></i></a>
+			<a href="#"><i class="glyphicon glyphicon-console"></i></a>
+		</div>
+	</div>
+	<div class="post-bottom">
+			<div class="post-bottom-comment">
+					12:52PM 06-Aug'16
+			</div>
+	</div>
+</div>
+<div class="post">
+	<div class="post-img">
+		<div class="post-date">
+			<span class="post-year">2016</span>
+			<span class="post-day">JUN/16</span>
+		</div>
+		<div class="content-type">
+			<img src="https://static.pexels.com/photos/64769/pexels-photo-64769-large.jpeg" alt="" />
+		</div>
+		<div class="post-poster">
+			<img src="icon_2.jpg" alt="" />
+			<span>// ADITYA </span>
+		</div>
+	</div>
+	<div class="post-content">
+		<p>
+			<a href="#">This is Headding to be set of this character</a>
+		</p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+	</div>
+	<div class="post-readmore">
+		<div class="social-sharing">
+			<a href="#"><i class="glyphicon glyphicon-education"></i></a>
+			<a href="#"><i class="glyphicon glyphicon-object-align-left"></i></a>
+			<a href="#"><i class="glyphicon glyphicon-console"></i></a>
+		</div>
+	</div>
+	<div class="post-bottom">
+			<div class="post-bottom-comment">
+				12:52PM 06-Aug'16
+			</div>
+	</div>
+</div>
+<div class="post">
+	<div class="post-img">
+		<div class="post-date">
+			<span class="post-year">2016</span>
+			<span class="post-day">JUN/16</span>
+		</div>
+		<div class="content-type">
+			<img src="https://static.pexels.com/photos/64769/pexels-photo-64769-large.jpeg" alt="" />
+		</div>
+		<div class="post-poster">
+			<img src="icon_2.jpg" alt="" />
+			<span>// ADITYA </span>
+		</div>
+	</div>
+	<div class="post-content">
+		<p>
+			<a href="#">This is Headding to be set of this character</a>
+		</p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+	</div>
+	<div class="post-readmore">
+		<div class="social-sharing">
+			<a href="#"><i class="glyphicon glyphicon-education"></i></a>
+			<a href="#"><i class="glyphicon glyphicon-object-align-left"></i></a>
+			<a href="#"><i class="glyphicon glyphicon-console"></i></a>
+		</div>
+	</div>
+	<div class="post-bottom">
+			<div class="post-bottom-comment">
+				12:52PM 06-Aug'16
+			</div>
+	</div>
+</div>
+<div class="post">
+	<div class="post-img">
+		<div class="post-date">
+			<span class="post-year">2016</span>
+			<span class="post-day">JUN/16</span>
+		</div>
+		<div class="content-type">
+			<img src="https://static.pexels.com/photos/64769/pexels-photo-64769-large.jpeg" alt="" />
+		</div>
+		<div class="post-poster">
+			<img src="icon_2.jpg" alt="" />
+			<span>// ADITYA </span>
+		</div>
+	</div>
+	<div class="post-content">
+		<p>
+			<a href="#">This is Headding to be set of this character</a>
+		</p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+	</div>
+	<div class="post-readmore">
+		<div class="social-sharing">
+			<a href="#"><i class="glyphicon glyphicon-education"></i></a>
+			<a href="#"><i class="glyphicon glyphicon-object-align-left"></i></a>
+			<a href="#"><i class="glyphicon glyphicon-console"></i></a>
+		</div>
+	</div>
+	<div class="post-bottom">
+			<div class="post-bottom-comment">
+				12:52PM 06-Aug'16
+			</div>
+	</div>
+</div>
+<!-- TODO: Sample post to delete -->
+	</div>
+</div>
+<a href="createblog.html"><div class="add-post-button"></div></a>
+<div class="scroll-up-button">
+</div>
+	<script src="js/jquery-3.0.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src='js/masonry.pkgd.min.js'></script>
+	<script src="js/index.js" charset="utf-8"></script>
+	<script src="js/menu-actions.js" charset="utf-8"></script>
+	<script src="js/list.min.js" charset="utf-8"></script>
+	<script type="text/javascript">
+	var locationCount = 0;
+	$('.location-part-toggle').click(function () {
+		if(locationCount == 0) {
+					$('.location-part').fadeIn();
+					locationCount = 1;
+		}
+		else if(locationCount == 1) {
+			$('.location-part').fadeOut();
+			locationCount = 0;
+		}
+	});
+	var options = {
+	valueNames: [ 'post-content' ]
+	};
+
+	var userList = new List('users', options);
+	</script>
+	<script type="text/javascript">
+	document.onscroll = function() {myFunction()};
+	function myFunction() {
+			if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+				document.getElementsByClassName("scroll-up-button")[0].className = "scroll-up-button-on";
+			} else {
+				document.getElementsByClassName("scroll-up-button-on")[0].className = "scroll-up-button";
+			}
+	}
+	$(".scroll-up-button").on("click",function (){
+		$(".scroll-up-button-on").addClass("scroll-up-button-off");
+		$("html, body").animate({ scrollTop: 0 }, "slow");
+  	return false;
+	});
+	</script>
+</body>
+</html>
